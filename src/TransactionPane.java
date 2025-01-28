@@ -298,7 +298,7 @@ public class TransactionPane {
         String sql = "SELECT CustomerID FROM customers WHERE Name = ?";
         
         try (
-             PreparedStatement statement = conn.prepareStatement(sql)) {
+            PreparedStatement statement = conn.prepareStatement(sql)) {
             
             statement.setString(1, customerName); 
             
